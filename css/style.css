@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+  padding: 6rem 1.2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main {
+    padding: 3rem 1.2rem;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 96rem;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 6.4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header {
+    margin-bottom: 3.9rem;
+  }
+}
+
+.header .profile {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 2.4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .profile {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.header .profile__image-container {
+  max-width: 15.6rem;
+  max-height: 15.6rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .profile__image-container {
+    max-width: 10.176rem;
+    max-height: 10.176rem;
+    margin-bottom: 1.12rem;
+  }
+}
+
+.header .profile__image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header .profile__name {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #4E5150;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .profile__name {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+}
+
+.header .profile small {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #A9A9A9;
+}
+
+.header .social-status {
+  display: flex;
+}
+
+.header .social-status__posts {
+  width: 10.0rem;
+  height: 6.7rem;
+  left: 54.6rem;
+  top: 31.0rem;
+  background: #E5E5E5;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .social-status__posts {
+    max-width: 7.8rem;
+    max-height: 5.2rem;
+  }
+}
+
+.header .social-status__posts:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.header .social-status__posts-number {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #4E5150;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .social-status__posts-number {
+    font-size: 1.2rem;
+    line-height: 1.463rem;
+  }
+}
+
+.header .social-status__posts-title {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #BDBDBD;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .social-status__posts-title {
+    font-size: 1.2rem;
+    line-height: 1.463rem;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 22.9rem);
+  grid-gap: 3.2rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .gallery {
+    grid-template-rows: repeat(3, 27.3vw);
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .gallery {
+    grid-gap: 1.3rem;
+  }
+}
+
+.gallery-item--2 {
+  grid-column: 2/-1;
+}
+
+.gallery-item--3 {
+  grid-column: 1/3;
+}
+
+.gallery-item--4 {
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+
+.gallery-item--5 {
+  grid-column: 1/2;
+}
+
+.gallery__image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+
+.gallery__image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer__link {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #A9A9A9;
+  display: flex;
+  align-items: center;
+  margin-top: 10rem;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer__link {
+    margin-top: 4rem;
+  }
+}
